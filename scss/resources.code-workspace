@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "resources",
+			"path": "../resources"
+		},
+		{
+			"name": "images",
+			"path": "../images"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "resources"
+	}
+}
