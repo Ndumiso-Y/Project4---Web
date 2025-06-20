@@ -1,39 +1,28 @@
+// scss/base/_typography.scss
+@use '../utilities' as *;
 
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
+body {
+  font-family: $font-family-base;
+}
+
 
 * {
-  font-family: 'Lato', sans-serif;
-  color: #777;
-  box-sizing: border-box;
+  font-family: $font-family-base;
+  color: $text-color;
 }
-
-p {
-  line-height: 1.45em;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
 
 .headline-primary {
-  color: #58e1c1;
+  color: $primary-color;
   margin-left: 10px;
 }
 
 .headline-secondary {
   font-weight: 300;
-  color: #777;
+  color: $text-color;
 }
 
 .link {
-  color: #51ddfc;
+  color: $secondary-color;
   font-weight: 700;
 }
 
@@ -43,6 +32,6 @@ a {
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
-  border-left: 8px solid #58e1c1;
+  border-left: 8px solid $blockquote-border;
   border-radius: 5px;
 }

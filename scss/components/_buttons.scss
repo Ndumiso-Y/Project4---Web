@@ -1,32 +1,35 @@
-@use '../utilities';
+@use '../utilities' as *;
+
 
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-color: lighten(utilities.$primary-color, 15%);
+  @include button-style($success-color);
+
+  &:hover {
+    background-color: lighten($success-color, 15%);
+  }
 }
+
+
+
 
 .default {
-  background-color: #51ddfc;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
+  @include button-style($info-color);
 }
 
 .success {
-  background-color: lighten(utilities.$primary-color, 15%);
+  @include button-style($success-color);
+}
+
+.error {
+  @include button-style($error-color);
 }
 
 .warning {
-  background-color: #fd7856;
+  @include button-style($warning-color);
+}
+
+.info {
+  @include button-style($info-color);
 }

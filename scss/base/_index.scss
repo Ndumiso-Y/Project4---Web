@@ -1,2 +1,2 @@
-@forward "normalize";
-@forward "typography";
+@use '../utilities/variables' as *;
+@use './typography';

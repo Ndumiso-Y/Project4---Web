@@ -1,5 +1,15 @@
+// Colors
 $primary-color: #58e1c1;
-$link-color: #51ddfc;
+$secondary-color: #51ddfc;
+$error-color: #e4757a;
+$success-color: #99edd9;
+$info-color: #927bc1;
+$warning-color: #fd7856;
 $text-color: #777;
-$font-stack: 'Lato', sans-serif;
-$breakpoint-md: 768px;
+$blockquote-border: $primary-color;
+
+// Fonts
+$font-family-base: 'Lato', sans-serif;
+
+// Breakpoints
+$mobile-breakpoint: 768px;
