@@ -1,6 +1,6 @@
-@forward "grid";
-@forward "navigation";
-@forward "buttons";
-@forward "forms";
-@forward "images";
-@forward "media-queries"; 
+@use 'buttons';
+@use 'forms';
+@use 'navigation';
+@use 'images';
+@use 'media-queries';
+@use 'grid';
