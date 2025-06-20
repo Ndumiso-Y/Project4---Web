@@ -1,4 +1,8 @@
 // Flex Center Mixin
+// =================
+// Reusable mixin to center content both vertically and horizontally
+
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -17,6 +21,9 @@
 }
 
 // Button Style Mixin
+// ==================
+// Generates consistent button styles with dynamic background color.
+
 @mixin button-style($bg-color) {
   background-color: $bg-color;
   color: #fff;

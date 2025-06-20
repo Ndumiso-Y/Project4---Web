@@ -1,5 +1,10 @@
 @use '../utilities' as *;
 
+// Buttons
+// =======
+// Styles for different button types using the button-style mixin.
+// Includes a hover effect using the Sass lighten() function.
+
 
 .btn {
   margin-top: 15px;

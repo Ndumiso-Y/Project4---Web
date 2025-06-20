@@ -1,5 +1,9 @@
 @use '../utilities' as *;
 
+// Grid System
+// ===========
+// Responsive 12-column flexbox grid layout.
+// Adjusts to row layout at medium screen size and above.
 
 .container {
   padding: 0 10px;
@@ -24,6 +28,7 @@
   border-radius: 5px;
 }
 
+// Column background colors for demo purposes
 .theme.col-1,
 .theme.col-2,
 .theme.col-3,

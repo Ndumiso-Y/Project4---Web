@@ -1,7 +1,9 @@
 // scss/components/_buttons.scss
 @use '../utilities' as *;
 
-@use '../utilities' as *;
+// Navigation
+// ==========
+// Base navigation bar styles with nested links using the parent selector (&).
 
 .nav {
   padding-left: 0;

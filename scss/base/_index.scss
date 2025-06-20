@@ -1,2 +1,6 @@
+// Base Index
+// ==========
+// Central import hub for base styles like normalize and typography.
+
 @use '../utilities/variables' as *;
 @use './typography';
