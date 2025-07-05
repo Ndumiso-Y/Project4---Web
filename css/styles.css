@@ -47,12 +47,15 @@ body {
 }
 
 .default {
-  background-color: #927bc1;
+  background-color: #58e1c1;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+.default:hover {
+  background-color: #99edd9;
 }
 
 .success {
@@ -63,6 +66,9 @@ body {
   border-radius: 5px;
   text-transform: uppercase;
 }
+.success:hover {
+  background-color: #daf8f1;
+}
 
 .error {
   background-color: #e4757a;
@@ -71,6 +77,9 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .warning {
@@ -81,6 +90,9 @@ body {
   border-radius: 5px;
   text-transform: uppercase;
 }
+.warning:hover {
+  background-color: #feb4a2;
+}
 
 .info {
   background-color: #927bc1;
@@ -89,6 +101,9 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+.info:hover {
+  background-color: #bdafd9;
 }
 
 .form {
