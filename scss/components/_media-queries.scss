@@ -5,8 +5,8 @@
   .container {
     max-width: 1400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .centered {
@@ -38,7 +38,9 @@
 
   @include respond-to(medium) {
   .nav-link {
-    background-color: $success-color;
+    margin-left: 50px;        
+    text-decoration: none;   
+    border: none;             
   }
 }
 
@@ -51,8 +53,9 @@
     }
   }
 
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
+  .img-logo {
+    margin-left: 0;
+  
   }
 }
+

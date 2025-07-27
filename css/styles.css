@@ -43,7 +43,7 @@ body {
   text-transform: uppercase;
 }
 .btn:hover {
-  background-color: #daf8f1;
+  background-color: rgb(218.025, 248.475, 241.225);
 }
 
 .default {
@@ -55,7 +55,7 @@ body {
   text-transform: uppercase;
 }
 .default:hover {
-  background-color: #99edd9;
+  background-color: rgb(152.8502538071, 236.6497461929, 217.076142132);
 }
 
 .success {
@@ -67,7 +67,7 @@ body {
   text-transform: uppercase;
 }
 .success:hover {
-  background-color: #daf8f1;
+  background-color: rgb(218.025, 248.475, 241.225);
 }
 
 .error {
@@ -79,7 +79,7 @@ body {
   text-transform: uppercase;
 }
 .error:hover {
-  background-color: #f1b5b8;
+  background-color: rgb(240.5181818182, 180.9818181818, 183.6636363636);
 }
 
 .warning {
@@ -91,7 +91,7 @@ body {
   text-transform: uppercase;
 }
 .warning:hover {
-  background-color: #feb4a2;
+  background-color: rgb(253.8947368421, 180.3947368421, 161.6052631579);
 }
 
 .info {
@@ -103,7 +103,7 @@ body {
   text-transform: uppercase;
 }
 .info:hover {
-  background-color: #bdafd9;
+  background-color: rgb(188.9819587629, 175.0515463918, 217.4484536082);
 }
 
 .form {
@@ -179,8 +179,8 @@ body {
   .container {
     max-width: 1400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
   .centered {
     display: block;
@@ -207,7 +207,9 @@ body {
 }
 @media (min-width: 768px) and (max-width: 768px) {
   .nav-link {
-    background-color: #99edd9;
+    margin-left: 50px;
+    text-decoration: none;
+    border: none;
   }
 }
 @media (min-width: 768px) {
@@ -217,9 +219,8 @@ body {
   .btn + .btn {
     margin-left: 10px;
   }
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
+  .img-logo {
+    margin-left: 0;
   }
 }
 .container {

@@ -3,6 +3,6 @@
 // This file imports all partials to compile the final CSS.
 // Organized by base styles, components, and utilities.
 
-@use 'utilities';
 @use 'base';
+@use 'utilities';
 @use 'components';
