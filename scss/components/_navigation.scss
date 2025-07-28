@@ -5,26 +5,146 @@
 // ==========
 // Base navigation bar styles with nested links using the parent selector (&).
 
+// scss/components/_navigation.scss
+@use '../utilities' as *;
+
+// Navigation
 .nav {
-  padding-left: 0;
-  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  justify-self: start;
+}
+
+.logo img {
+  height: 75px;
+  width: auto;
+  display: block; \
+}
+
+.nav-right {
   display: flex;
-  flex-direction: column;
-  @include flex-center;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+// scss/components/_navigation.scss
+@use '../utilities' as *;
+
+// scss/components/_navigation.scss
+@use '../utilities' as *;
+
+// Navigation (769px and above, including 1384px)
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  justify-self: start;
+}
+
+.logo img {
+  height: 75px;
+  width: auto;
+  display: block;
+  visibility: visible;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .nav-left {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .logo {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .logo img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .nav-right {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
 
   .nav-link {
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-    transition: 
-      background-color .2s ease-in-out, 
-      color .2s ease-in-out;
-
-    &:hover {
-      color: #fff;
-      background-color: $primary-color; 
-    }
+    text-align: center !important;
   }
 }
