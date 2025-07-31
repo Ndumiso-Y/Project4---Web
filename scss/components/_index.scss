@@ -1,10 +1,8 @@
-// Components Index
-// ================
+// scss/components/_index.scss
 // Imports all component-specific partials for inclusion in main stylesheet.
-
 @use 'buttons';
 @use 'forms';
 @use 'navigation';
 @use 'images';
-@use 'media-queries';
 @use 'grid';
+@use 'media-queries';

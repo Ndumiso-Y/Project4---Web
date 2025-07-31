@@ -1,10 +1,8 @@
+// scss/components/_grid.scss
 @use '../utilities' as *;
 
 // Grid System
-// ===========
-// Responsive 12-column flexbox grid layout.
-// Adjusts to row layout at medium screen size and above.
-
+// Responsive 12-column flexbox grid layout
 .container {
   padding: 0 10px;
 }
@@ -13,11 +11,6 @@
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
-
-  // Responsive: Change flex direction at medium screen size
-  @include respond-to(medium) {
-    flex-direction: row;
-  }
 }
 
 [class^=col] {
@@ -26,6 +19,20 @@
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+
+// Column widths for desktop (769px and above)
+@media (min-width: 769px) {
+  .row {
+    flex-direction: row;
+  }
+  .col-12 { flex-basis: 100%; }
+  .col-8 { flex-basis: 66.666%; }
+  .col-7 { flex-basis: 58.333%; }
+  .col-6 { flex-basis: 50%; }
+  .col-5 { flex-basis: 41.666%; }
+  .col-4 { flex-basis: 33.333%; }
+  .col-3 { flex-basis: 25%; }
 }
 
 // Column background colors for demo purposes
